@@ -1,0 +1,74 @@
+body{
+  background-image: url(butcher1.jpg); 
+   background-repeat: no-repeat; 
+    background-size: cover;       
+    background-position: center;  
+    background-attachment: fixed; 
+  ;
+}
+h1{
+    text-align: center;
+    font-size: 60px;
+    color: brown;
+    margin-bottom: 40px;
+}
+p{
+  color: aliceblue;
+  font: size 46px;
+}
+
+h2{
+    font-size: 50px;
+    color:brown;
+    margin-bottom: 12px;
+}
+p{
+  line-height: normal;
+}
+.container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  gap: 20px;
+}
+#PS, #BP, #M{
+  width: 30%;
+}
+#PS{text-align: left;}
+#BP{text-align: center;}
+#M{text-align: right;}
+
+details summary{
+  font-size: 50px;
+  color: brown;
+  cursor: pointer;
+  padding: 10px;
+  list-style: none;
+}
+
+details[:open] summary{
+  font-weigth:bold;
+}
+details p{
+  color: aliceblue;
+  font-size: 46px;
+  margin-left: 10px;
+}
+details {
+  background-color: dimgray;
+  padding: 10px;
+  border-radius: 10px;
+}
+body::after {
+    content: "";
+    position:absolute;          
+    top: 20px;             
+    right: 20px;              
+    width: 200px;             
+    height: 200px;            
+    background-image: url("butcher logo.jpg"); 
+    background-size: contain; 
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 1000;           
+}
